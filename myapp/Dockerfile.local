@@ -4,7 +4,9 @@ RUN npm install -g nodemon
 
 # RUN mkdir /home/app
 WORKDIR /home/app
-RUN npm rebuild
+
+RUN rm -rf node_modules
+#RUN npm install
 
 EXPOSE 3000
 
