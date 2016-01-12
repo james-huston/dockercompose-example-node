@@ -1,6 +1,6 @@
 myapp:
   build: ../myapp
-  dockerfile: Dockerfile.myapp
+  dockerfile: Dockerfile.local
   volumes:
     - ../myapp/:/home/app
   links:
