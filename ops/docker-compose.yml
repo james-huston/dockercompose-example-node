@@ -1,0 +1,9 @@
+myapp:
+  build: ../myapp
+  dockerfile: Dockerfile.myapp
+  volumes:
+    - ../myapp/:/home/app
+  links:
+    - redis:redis-server
+redis:
+  image: redis

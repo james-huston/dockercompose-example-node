@@ -1,0 +1,11 @@
+FROM node:4.2
+
+RUN npm install -g nodemon
+
+# RUN mkdir /home/app
+WORKDIR /home/app
+RUN npm rebuild
+
+EXPOSE 3000
+
+CMD nodemon -L index.js
